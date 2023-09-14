@@ -12,8 +12,7 @@ const Footer = () => {
           </a>
 
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
-            Get shoes ready for the new term at your nearest Nike store. Find
-            your perfect size in store. Get Rewards
+          Não fique de fora da nova tendência. Escolha o seu estilo e adquira o seu. Consulte nossas promoções.
           </p>
 
           <div className="flex items-center gap-5 mt-8">
@@ -29,15 +28,15 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
-          {footerLinks.map((section) => (
-            <div key={section}>
+          {footerLinks.map((section, index) => (
+            <div key={index}>
               <h4 className="text-white font-montserrat leading-normal font-medium text-2xl mb-6">
                 {section.title}
               </h4>
               <ul>
-                {section.links.map((link) => (
+                {section.links.map((link, index) => (
                   <li
-                    key={link.name}
+                    key={index}
                     className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray"
                   >
                     <a href="">{link.name}</a>
@@ -58,10 +57,10 @@ const Footer = () => {
             height={20}
             className="rounded-full m-0"
           />
-          <p>Copyright. All Rights Reserved</p>
+          <p>Copyright. Todos os direitos reservados, Nike Inc.</p>
         </div>
 
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="font-montserrat cursor-pointer">Termos & Condições</p>
       </div>
     </footer>
   );

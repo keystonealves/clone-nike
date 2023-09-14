@@ -12,6 +12,7 @@ import {
   bigShoe3,
   customer1,
   customer2,
+  customer3,
   shoe4,
   shoe5,
   shoe6,
@@ -23,10 +24,10 @@ import {
 
 export const navLinks = [
   { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
-  { href: "#sign-in", label: "Sign In" },
+  { href: "#about-us", label: "Sobre Nós" },
+  { href: "#products", label: "Produtos" },
+  { href: "#contact-us", label: "Fale Conosco" },
+  { href: "#sign-in", label: "Entrar / Cadastro" },
 ];
 
 export const shoes = [
@@ -45,34 +46,34 @@ export const shoes = [
 ];
 
 export const statistics = [
-  { value: "1k+", label: "Brands" },
-  { value: "500k+", label: "Shops" },
-  { value: "250k+", label: "Customers" },
+  { value: "1k+", label: "Modelos" },
+  { value: "500k+", label: "Vendas" },
+  { value: "250k+", label: "Clientes" },
 ];
 
 export const products = [
   {
     imgURL: shoe4,
     name: "Nike Air Jordan-01",
-    price: "$200.20",
+    price: "R$ 299.90",
     rating: "4.5",
   },
   {
     imgURL: shoe5,
     name: "Nike Air Jordan-10",
-    price: "$210.20",
+    price: "R$ 499.90",
     rating: "4.8",
   },
   {
     imgURL: shoe6,
     name: "Nike Air Jordan-100",
-    price: "$220.20",
+    price: "R$ 249.90",
     rating: "4.4",
   },
   {
     imgURL: shoe7,
     name: "Nike Air Jordan-001",
-    price: "$230.20",
+    price: "R$ 199.90",
     rating: "4.2",
   },
 ];
@@ -80,66 +81,73 @@ export const products = [
 export const services = [
   {
     imgURL: truckFast,
-    label: "Free shipping",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
+    label: "Entrega Grátis",
+    subtext: "Compras pela nossa plataforma não pagam frete! Válido para todo o território brasileiro.",
   },
   {
     imgURL: shieldTick,
-    label: "Secure Payment",
+    label: "Pagamento seguro",
     subtext:
-      "Experience worry-free transactions with our secure payment options.",
+      "Temos um ambiente seguro para que você possa comprar com segurança e sem preocupações.",
   },
   {
     imgURL: support,
-    label: "Love to help you",
-    subtext: "Our dedicated team is here to assist you every step of the way.",
+    label: "Adoramos ajudar você",
+    subtext: "Temos um time dedicado que está sempre disponível para ajudar em cada etapa do caminho.",
   },
 ];
 
 export const reviews = [
   {
     imgURL: customer1,
-    customerName: "Morich Brown",
-    rating: 4.5,
+    customerName: "Alberto Freitas",
+    rating: 4.9,
     feedback:
-      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+      "A atenção aos detalhes e a qualidade do produto superaram minhas expectativas. Altamente recomendado!",
   },
   {
     imgURL: customer2,
-    customerName: "Lota Mongeskar",
-    rating: 4.5,
+    customerName: "Lola Montes",
+    rating: 4.8,
     feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+      "O produto não só atendeu como superou minhas expectativas. Com certeza serei um cliente recorrente!",
+  },
+  {
+    imgURL: customer3,
+    customerName: "Carlos Ribeiro",
+    rating: 4.7,
+    feedback:
+      "Produto sensacional, apenas o tamanho que é um pouco diferente no Brasil, mas o time de suporte me atendeu super bem!",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Products",
+    title: "Marcas",
     links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
+      { name: "Air Jordan", link: "/" },
+      { name: "Air Force", link: "/" },
+      { name: "Air Force Sports", link: "/" },
+      { name: "Air Max", link: "/" },
       { name: "Nike Waffle Racer", link: "/" },
       { name: "Nike Cortez", link: "/" },
     ],
   },
   {
-    title: "Help",
+    title: "Suporte",
     links: [
-      { name: "About us", link: "/" },
+      { name: "Sobre nós", link: "/" },
       { name: "FAQs", link: "/" },
-      { name: "How it works", link: "/" },
-      { name: "Privacy policy", link: "/" },
-      { name: "Payment policy", link: "/" },
+      { name: "Pedidos / Financeiro", link: "/" },
+      { name: "Política de Privacidade", link: "/" },
+      { name: "Política de Pagamento", link: "/" },
     ],
   },
   {
-    title: "Get in touch",
+    title: "Fale conosco",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-      { name: "+92554862354", link: "tel:+92554862354" },
+      { name: "suporte@nike.com", link: "mailto:suporte@nike.com" },
+      { name: "+55 (62) 99999-9999", link: "tel:+5562999999999" },
     ],
   },
 ];
